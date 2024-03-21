@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./output/tailwind.css" />
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gray-400 h-screen w-screen flex justify-center items-center flex-col"
+  >
+    <div
+      class="flex flex-col h-[32rem] w-72 justify-start bg-gray-100 rounded-xl lg:flex-row lg:h-[24rem] lg:w-[40rem]"
+    >
+      <img
+        src="./images/image-product-mobile.jpg"
+        alt="hero image"
+        class="object-cover flex-grow-0 flex-shrink-0 rounded-t-xl mb-4 lg:mb-0 lg:w-96 lg:rounded-l-xl lg:rounded-tr-none"
+      />
+      <div class="flex flex-col pl-6 pr-6 lg:bg-gray-100">
+        <p
+          class="tracking-[.7em] text-[14px] font-Montserrat font-light mb-1 lg:mt-4"
+        >
+          PERFUME
+        </p>
+        <h1
+          class="font-bold text-[1.5em] font-Fraunces tracking-widest mb-3 lg:text-[1.4em] lg:tracking-normal"
+        >
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <p class="font-Montserrat font-light text-[.8em] mb-4 lg:mb-8">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the house of CHANEL
+        </p>
+        <div class="mb-2 lg:mb-6">
+          <span class="text-3xl font-bold text-neutral-600 lg:mr-2"
+            >$149.99</span
+          >
+          <span class="line-through">$169.99</span>
+        </div>
+        <div class="mb-4">
+          <button
+            class="flex justify-center items-center bg-neutral-600 w-[100%] h-10 rounded-lg hover:bg-neutral-800 focus:bg-neutral-800"
+          >
+            <img src="./images/icon-cart.svg" alt="cart icon" class="pr-2" />
+            <span class="text-white">Add to Cart</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/Tanmoy-Sarkar-Pranto" target="_blank"
+        >Tanmoy Sarkar Pranto</a
+      >.
+    </div>
+  </footer>
+</html>
